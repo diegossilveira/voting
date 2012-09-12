@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="icon close-btn"></div>
+	<div class="box main-box">
+		<div class="header">
+			<h1 class="icon header-icon">QUEM DEVE SER <b>ELIMINADO</b>?</h1>
+		</div>
+		<div class="separator"></div>
+		<span class="cell">
+			<h2><%= Participant.byId(1).name %></h2>
+		</span>
+		<span class="cell">
+			<h2><%= Participant.byId(2).name %></h2>
+		</span>
+		<a class="participant-option" participant-id="1" href="#">
+			<div class="box cell participant-box icon participant-one"></div>
+		</a>
+		<a class="participant-option" participant-id="2" href="#">
+			<div class="box cell participant-box icon participant-two"></div>
+		</a>
+		<span class="cell">
+			<p>Para eliminar o <b><%= Participant.byId(1).name %></b> pelo telefone<br/>disque <b>0800-123-001</b> ou mande SMS para <b>8001</b></p>
+		</span>
+		<span class="cell">
+			<p>Para eliminar o <b><%= Participant.byId(2).name %></b> pelo telefone<br/>disque <b>0800-123-002</b> ou mande SMS para <b>8002</b></p>
+		</span>
+		<div class="clear"></div>
+		<div class="footer">
+			<a id="voteBtn" class="btn btn-primary btn-large" href="#">Envie seu voto agora</a>
+		</div>
+	</div>
+</div>
+<div id="captchaModal" class="reveal-modal">
+	<p>Digite as letras abaixo para confirmar seu voto:</p>
+	<a class="close-reveal-modal">&#215;</a>
+	<form id="votingForm" method="post">
+		<%=  recaptcha_tag :challenge, :display => { :theme => 'clean'} %>
+	</form>
+	<a id="captchaBtn" class="btn btn-primary" href="#">Confirmar voto</a>
+</div>

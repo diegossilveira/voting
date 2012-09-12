@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="icon close-btn"></div>
+	<div class="box main-box">
+		<div class="header">
+			<h1 class="icon header-icon">QUEM DEVE SER <b>ELIMINADO</b>?</h1>
+		</div>
+		<div class="separator"></div>
+		<p class="result"><b>Parabéns!</b> Seu voto para <b><%= @participant.name %></b> foi enviado com sucesso.</p>
+		<div class="result-participant-box icon result-participant-one"></div>
+		<div class="result-participant-box icon result-participant-two"></div>
+		<div id="chartBox" class="result-chart-box"></div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script language="javascript">
+var scoreOne = <%= @partialResult[0][:voteCount] %>;
+var scoreTwo = <%= @partialResult[1][:voteCount] %>;
+var hours = <%= @timeToEnd[:hours] %>;
+var minutes = <%= @timeToEnd[:minutes] %>;
+var seconds = <%= @timeToEnd[:seconds] %>;
+</script>
