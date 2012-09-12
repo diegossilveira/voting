@@ -160,7 +160,7 @@ $(function() {
 	$('#captchaBtn').click(function(e){
 		Voting.vote();
 		return false;
-	});
+	});	
 
 	if($('#chartBox').length > 0) {
 		Graphics.init('chartBox');

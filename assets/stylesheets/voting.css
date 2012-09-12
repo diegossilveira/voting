@@ -39,6 +39,10 @@ a {
 	clear: both;
 }
 
+.center {
+	text-align: center;
+}
+
 .box {
 	padding: 0;
 	background-color: #ffffff;
@@ -85,6 +89,13 @@ a {
 	margin: 0 0 0 20px;
 }
 
+.cell-small {
+	padding: 0;
+	float: left;
+	width: 142px;
+	margin: 0 0 0 12px;
+}
+
 .participant-box {
 	height: 290px;
 }
@@ -122,6 +133,18 @@ a {
 .result-participant-two {
 	float: right;
 	background-position: -340px -200px;
+}
+
+.stats-box p {
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.stats-box p.small {
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .selected {

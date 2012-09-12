@@ -27,6 +27,13 @@ class VotingController < Sinatra::Base
 		erb :index
 	end
 
+	get '/voting/stats' do
+		@partialResult = Voting.partialResult
+		@total = Voting.totalCount
+		@perHour = "%.1f" % Voting.votePerHour
+		erb :stats
+	end
+
 	post '/voting/:id' do
 		if not recaptcha_valid?
 			erb :index
