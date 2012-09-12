@@ -33,7 +33,7 @@
 	<p>Digite as letras abaixo para confirmar seu voto:</p>
 	<a class="close-reveal-modal">&#215;</a>
 	<form id="votingForm" method="post">
-		<%=  recaptcha_tag :challenge, :display => { :theme => 'clean'} %>
+		<%=  recaptcha_tag :ajax, :display => { :theme => 'clean'} %>
 	</form>
 	<div class="center">
 		<a id="captchaBtn" class="btn btn-primary" href="#">Confirmar voto</a>
