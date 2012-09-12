@@ -14,8 +14,6 @@ class VotingController < Sinatra::Base
 	configure do
 		set :public_folder, File.dirname(__FILE__) + '/../assets'
 		set :views, File.dirname(__FILE__) + '/../views'
-		set :logging, false
-		set :server, [:thin, :webrick, :mongrel]
 	end
 
 	get '/voting' do

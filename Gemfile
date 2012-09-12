@@ -5,6 +5,6 @@ gem "hiredis", "~> 0.4.5"
 gem "em-synchrony"
 gem 'rack-recaptcha', :require => 'rack/recaptcha'
 gem "rspec"
-gem "sinatra"
+gem 'sinatra', :git => "git://github.com/sinatra/sinatra.git"
 gem "sinatra-synchrony"
 gem "thin"

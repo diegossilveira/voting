@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/sinatra/sinatra.git
+  revision: ddbba34d3facd6748b9d4a56863d6f1eb80e2f32
+  specs:
+    sinatra (1.4.0)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -35,10 +44,6 @@ GEM
     rspec-expectations (2.11.3)
       diff-lcs (~> 1.1.3)
     rspec-mocks (2.11.2)
-    sinatra (1.3.3)
-      rack (~> 1.3, >= 1.3.6)
-      rack-protection (~> 1.2)
-      tilt (~> 1.3, >= 1.3.3)
     sinatra-synchrony (0.4.1)
       em-http-request (~> 1.0)
       em-resolv-replace (~> 1.1)
@@ -61,6 +66,6 @@ DEPENDENCIES
   rack-recaptcha
   redis (~> 3.0.0.rc2)
   rspec
-  sinatra
+  sinatra!
   sinatra-synchrony
   thin
