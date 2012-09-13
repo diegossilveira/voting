@@ -31,6 +31,7 @@ a {
 }
 
 .container {
+	position: relative;
 	width: 630px;
 	margin: 0 20px 0 20px;
 }
@@ -110,9 +111,9 @@ a {
 
 .result-chart-box {
 	position: absolute;
-	margin: 0 20px 0 20px;
-	left: 180px;
-	top: 286px;
+	margin-left: -140px;
+	left: 50%;
+	bottom: 0;
 }
 
 .result-participant-box {
