@@ -3,6 +3,7 @@ Pre-requisites
 
 * Ruby 1.9.3
 * Redis Server [download here](http://redis.io/)
+* Ubuntu 11.10+ (recommended) or Mac OS X
 
 Running
 -------
