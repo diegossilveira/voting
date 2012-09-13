@@ -17,7 +17,7 @@ class VotingApp < Sinatra::Base
     $VOTING_DURATION_IN_DAYS = 2
 
     # redis client
-    $redis = Redis.new(:driver => :ruby)
+    $redis = Redis.new
 
     configure do
         set :environments, %w{development test production benchmark}
