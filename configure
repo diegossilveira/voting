@@ -1,0 +1,20 @@
+ #!/bin/sh
+
+REDIS_FOLDER='./redis-2.4.17'
+
+# Download and install Redis
+if [ ! -d $REDIS_FOLDER ]; then
+	wget http://redis.googlecode.com/files/redis-2.4.17.tar.gz
+	tar zxvf redis-2.4.17.tar.gz
+	rm -rf redis-2.4.17.tar.gz
+	cd redis-2.4.17
+	make
+	cd ..
+fi
+
+# Start Redis
+$REDIS_FOLDER/src/redis-server redis.conf
+
+# Install gems
+gem install bundler
+bundle install
