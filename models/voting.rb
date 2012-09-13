@@ -24,7 +24,7 @@ class Voting
   		self.totalCount / hours
   	end
 
-  	@private
+  	private
 
 	def self.daysFromBeginning
 		(DateTime.now - $VOTING_START_DATE).to_f

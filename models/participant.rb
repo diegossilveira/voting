@@ -5,7 +5,7 @@ class Participant
   def initialize(id,name=nil)
     @id = id
     @name = name
-    @key = 'participant:#{id}:votes'
+    @key = "participant:#{id}:votes"
   end
   
   def reset
