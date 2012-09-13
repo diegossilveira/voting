@@ -26,7 +26,6 @@ GEM
     em-synchrony (1.0.2)
       eventmachine (>= 1.0.0.beta.1)
     eventmachine (1.0.0)
-    hiredis (0.4.5)
     http_parser.rb (0.5.3)
     json (1.7.5)
     rack (1.4.1)
@@ -61,10 +60,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  em-synchrony
-  hiredis (~> 0.4.5)
   rack-recaptcha
-  redis (~> 3.0.0.rc2)
+  redis
   rspec
   sinatra!
   sinatra-synchrony

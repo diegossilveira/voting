@@ -5,7 +5,7 @@ class Participant
   def initialize(id,name=nil)
     @id = id
     @name = name
-    @key = "participant:#{id}:votes"
+    @key = 'participant:#{id}:votes'
   end
   
   def reset
@@ -29,6 +29,6 @@ class Participant
     PARTICIPANTS
   end
   
-  PARTICIPANTS = [Participant.new(1, "Participante 1"), Participant.new(2, "Participante 2")]
+  PARTICIPANTS = [Participant.new(1, 'Participante 1'), Participant.new(2, 'Participante 2')]
 
 end

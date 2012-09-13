@@ -12,23 +12,23 @@ describe Voting do
     Voting.reset
   end
 
-  it "should reset voting" do
+  it 'should reset voting' do
     Voting.reset
     Participant.all.each do
       |p| p.voteCount.should equal 0
     end
   end
   
-  context "partial results" do
+  context 'partial results' do
 
-    it "should have zero votes when initialized" do
+    it 'should have zero votes when initialized' do
       Voting.reset
       Voting.partialResult.each do
         |hash| hash[:voteCount].should equal 0
       end
     end
 
-    it "should have correct vote counts" do
+    it 'should have correct vote counts' do
       Voting.reset
       pOne = Participant.new(1)
       pTwo = Participant.new(2)
@@ -42,7 +42,7 @@ describe Voting do
 
   end
 
-  it "should have correct total vote count" do
+  it 'should have correct total vote count' do
     Voting.reset
     pOne = Participant.new(1)
     pTwo = Participant.new(2)
