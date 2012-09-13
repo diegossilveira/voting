@@ -61,7 +61,7 @@ Running manually
 
 7. Run
 
-	`rackup config.ru -E [production|benchmark]`
+	`rackup config.ru -s thin -E [production|benchmark]`
 
 8. Test
 
