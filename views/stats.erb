@@ -1,42 +1,42 @@
 <div class="container">
-	<div class="icon close-btn"></div>
-	<div class="box main-box">
-		<div class="header">
-			<h1 class="icon header-icon">RESULTADOS DA VOTAÇÃO</h1>
-		</div>
-		<div class="separator"></div>
-		<span class="cell-small">
-			<h2><%= Participant.byId(1).name %></h2>
-		</span>
-		<span class="cell-small">
-			<h2><%= Participant.byId(2).name %></h2>
-		</span>
-		<span class="cell-small">
-			<h2>Total</h2>
-		</span>
-		<span class="cell-small">
-			<h2>&nbsp;</h2>
-		</span>
-		<div class="box cell-small stats-box">
-			<p><%= @partialResult[0][:voteCount] %></p>
-			<p class="small">votos</p>
-		</div>
-		<div class="box cell-small stats-box">
-			<p><%= @partialResult[1][:voteCount] %></p>
-			<p class="small">votos</p>
-		</div>
-		<div class="box cell-small stats-box">
-			<p><%= @total %></p>
-			<p class="small">votos</p>
-		</div>
-		<div class="box cell-small stats-box">
-			<p><%= @perHour %></p>
-			<p class="small">votos / hora</p>
-		</div>
-		<div class="clear">
-		</div>
-		<div class="footer">
-			<a id="resetBtn" class="btn btn-primary" href="/voting/reset">Reiniciar votação</a>
-		</div>
-	</div>
+    <div class="icon close-btn"></div>
+    <div class="box main-box">
+        <div class="header">
+            <h1 class="icon header-icon">RESULTADOS DA VOTAÇÃO</h1>
+        </div>
+        <div class="separator"></div>
+        <span class="cell-small">
+            <h2><%= Participant.byId(1).name %></h2>
+        </span>
+        <span class="cell-small">
+            <h2><%= Participant.byId(2).name %></h2>
+        </span>
+        <span class="cell-small">
+            <h2>Total</h2>
+        </span>
+        <span class="cell-small">
+            <h2>&nbsp;</h2>
+        </span>
+        <div class="box cell-small stats-box">
+            <p><%= @partialResult[0][:voteCount] %></p>
+            <p class="small">votos</p>
+        </div>
+        <div class="box cell-small stats-box">
+            <p><%= @partialResult[1][:voteCount] %></p>
+            <p class="small">votos</p>
+        </div>
+        <div class="box cell-small stats-box">
+            <p><%= @total %></p>
+            <p class="small">votos</p>
+        </div>
+        <div class="box cell-small stats-box">
+            <p><%= @perHour %></p>
+            <p class="small">votos / hora</p>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="footer">
+            <a id="resetBtn" class="btn btn-primary" href="/voting/reset">Reiniciar votação</a>
+        </div>
+    </div>
 </div>
