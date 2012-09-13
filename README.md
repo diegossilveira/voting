@@ -3,6 +3,7 @@ Pre-requisites
 
 * Ruby 1.9.3
 * Redis Server [download here](http://redis.io/)
+* Ubuntu 11.10+ (recommended) or Mac OS X
 
 Running
 -------
@@ -61,7 +62,7 @@ Running manually
 
 7. Run
 
-	`rackup config.ru -E [production|benchmark]`
+	`rackup config.ru -s thin -E [production|benchmark]`
 
 8. Test
 
