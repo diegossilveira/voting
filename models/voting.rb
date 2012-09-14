@@ -7,7 +7,10 @@ class Voting
     end
 
     def self.partialResult
-        Participant.all.collect { |p| { :id => p.id, :voteCount => p.voteCount } }
+        partial = $redis.pipelined do
+            Participant.all.each { |p| $redis.get(p.key) }
+        end
+        Participant.all.each_with_index.collect { |p, i| { :id => p.id, :voteCount => partial[i].to_i } }
     end
 
     def self.timeToEnd
